@@ -1,0 +1,10 @@
+ext{
+    springVersion = "4.0.2.RELEASE"
+}
+
+subprojects(){
+    dependencies {
+        compile "org.springframework:spring-context:$springVersion"
+        testCompile "org.springframework:spring-test:$springVersion"
+    }
+}

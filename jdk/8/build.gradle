@@ -1,0 +1,9 @@
+ext {
+    JDK8_HOME = "/opt/java/jdk1.8.0_20"
+}
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.bootClasspath = "${JDK8_HOME}/jre/lib/rt.jar"
+}

@@ -1,0 +1,10 @@
+include "jdk:8"
+include "jdk:8:spring-framework:4:spring-data:mongodb:1"
+
+include "jdk:7"
+include "jdk:7:aspectj:7"
+include "jdk:7:jmockit:7"
+
+include "jdk:6"
+include "jdk:6:cucumber:1"
+

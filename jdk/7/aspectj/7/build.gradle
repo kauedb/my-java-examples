@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://maven.eveoh.nl/content/repositories/releases"
+        }
+    }
+
+    dependencies {
+        classpath "nl.eveoh:gradle-aspectj:1.4"
+    }
+}
+
+aspectjVersion = '1.7'
+
+apply plugin: 'aspectj'
+
+
+configurations{
+    ajc
+}
+
+dependencies {
+    ajc 'org.aspectj:aspectjtools:1.7.3'
+    compile 'org.aspectj:aspectjrt:1.7.3'
+}
+
+

@@ -1,0 +1,25 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
+subprojects() {
+    apply plugin: "java"
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url "http://jcenter.bintray.com"
+        }
+    }
+
+    dependencies {
+        testCompile "org.testng:testng:6.8.8"
+    }
+
+    test {
+        useTestNG()
+    }
+}
+
+

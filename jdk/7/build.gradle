@@ -1,0 +1,9 @@
+ext {
+    JDK7_HOME = "/opt/java/jdk1.7.0_25"
+}
+
+compileJava {
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+    options.bootClasspath = "${JDK7_HOME}/jre/lib/rt.jar"
+}

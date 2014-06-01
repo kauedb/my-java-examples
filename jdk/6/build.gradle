@@ -1,0 +1,9 @@
+ext {
+    JDK6_HOME = "/opt/java/jdk1.6.0_45"
+}
+
+compileJava {
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+    options.bootClasspath = "${JDK6_HOME}/jre/lib/rt.jar"
+}
